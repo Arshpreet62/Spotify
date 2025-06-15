@@ -4,15 +4,17 @@ import CustomPlaylist from "./CustomPlaylist";
 
 export default function ScrollablePlaylist() {
   const [showMore, setShowMore] = React.useState(false);
-  const scrollRef = useRef(null);
+
+  const scrollRef = useRef<HTMLDivElement | null>(null);
 
   const scrollLeft = () => {
-    scrollRef.current.scrollBy({ left: -300, behavior: "smooth" });
+    scrollRef.current?.scrollBy({ left: -300, behavior: "smooth" });
   };
 
   const scrollRight = () => {
-    scrollRef.current.scrollBy({ left: 300, behavior: "smooth" });
+    scrollRef.current?.scrollBy({ left: 300, behavior: "smooth" });
   };
+
   return (
     <div
       onMouseEnter={() => setShowMore(true)}
