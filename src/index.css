@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+/* index.css */
+
+.custom-range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 90px;
+  height: 5px;
+  border-radius: 5px;
+  background: #e5e7eb; /* fallback for background */
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+.custom-r {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 90px;
+  height: 5px;
+  border-radius: 5px;
+  background: #e5e7eb; /* fallback for background */
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
+/* WebKit (Chrome/Safari) */
+.custom-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 12px;
+  width: 12px;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -2px; /* centers it on 8px track */
+  z-index: 2;
+  position: relative;
+}
+
+.custom-r::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 12px;
+  width: 12px;
+  opacity: 0;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -2px; /* centers it on 8px track */
+  z-index: 2;
+  position: relative;
+}
+/* Firefox */
+.custom-range::-moz-range-thumb {
+  height: 10px;
+  width: 10px;
+  background: #4caf50;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.custom-r::-moz-range-thumb {
+  height: 10px;
+  width: 10px;
+  background: #4caf50;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.custom-r::-moz-range-track {
+  background: transparent;
+}
+
+.custom-range::-moz-range-track {
+  background: transparent;
+}
