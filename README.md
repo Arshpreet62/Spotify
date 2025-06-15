@@ -1,54 +1,52 @@
-# React + TypeScript + Vite
+# 🎧 Spotify Dashboard UI Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive **frontend-only** clone of the Spotify Web Player dashboard, built using **React**, **TypeScript**, and **TailwindCSS**. This project was created for learning advanced UI layout techniques including scroll behavior, sidebar management, grid layouts, and dark mode styling.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
 
-## Expanding the ESLint configuration
+👉 [Open Live Site](https://spotify-6t4lpvj74-arshpreet62s-projects.vercel.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠 Tech Stack
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- ⚛️ **React** (with Vite)
+- 💅 **TailwindCSS**
+- 🟦 **TypeScript**
+- 🌙 Fully Responsive Design
+
+---
+
+## 📦 Features
+
+- 🎵 **Fully styled Spotify dashboard UI**
+- 📂 Sidebar with active states and icons
+- 🔍 Top navigation bar with search and profile
+- 🧱 Reusable UI components (Buttons, Sliders, Playlists)
+- 💬 Scrollable playlist section with smooth scroll controls
+- 📱 Fully desktop responsive
+- 🧪 Component architecture with custom layout structure
+
+---
+
+## 🧱 Components
+
+### 🔘 Button
+Reusable `<Button />` component with variants like `primary`, `ghost`, etc.
+
+### 🎚️ ColoredSlider
+Custom range slider component matching Spotify style.
+
+### 🔁 Mix
+Music card component for displaying recommended mixes/playlists.
+
+### 📜 ScrollablePlaylist
+Horizontal scroll container with left/right button scroll support.
+
+---
+
+## 🚀 Getting Started
